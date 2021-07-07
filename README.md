@@ -50,4 +50,6 @@ popped up dialog box goto to 'unit cell'
 
 11. Apply it and press OK.
 
-12 Now, you have your shifted crystal without losing the atoms at the boundary.
+12. Now, you have your shifted crystal without losing the atoms at the boundary.
+
+Note:: Whatever the lattice system you have just export into '.xyz' format.
