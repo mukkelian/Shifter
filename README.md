@@ -19,24 +19,35 @@ shifted by 5 Angs. along 'z' direction.
 
 steps
 1. compile this program by any existing FORTRAN compiler, for my case it is gfortran.
+
 gfortran shifter.f90 -o shifter
- you will have an executable named as 'shifter'
+
+you will have an executable named as 'shifter'
 
 2. Open the perovskite.vesta file from VESTA software.
+
 3. Export the current file into 'xyz' formate.
 goto
 File --> Export Data.. 
-and select the file format (choose for the hidden atoms)
+and select the file format (choose for the hidden atoms too)
+
 4. Renamed as a.xyz
 (In the example folder step 3 and 4 is already done, but you may try these steps for better understanding)
+
 5. Run the program by './shifter' in the terminal or choose your ways.
+
 6. Program will ask you for the lattice parameter.
-for our case, I am giving the vacuum and shift it by 5 Angstrom along the z-direction. So I'm giving 3.91541 3.91541 20.0 (a, b, c lattice parameter). Then after it will ask your consent for shifting, type y for yes, and again for direction type z for the z-axis. Then after provide there the shifting parameter as 5 Angstrom.
-6. At this step you will have output file 'b.xyz'.
+for our case, I am giving the vacuum and shift it by 5 Angstrom along the z-direction. So I'm giving 3.91541 3.91541 20.0 (a, b, c lattice parameter). Then after it will ask your consent for shifting, type y for yes, and again for direction type z for the z-axis. Then after provide there the shifting parameter as 5 Angstrom. At this step you will have output file 'b.xyz'.
+
 7. Open VESTA for new structure (File--> New Structure) then in 
 popped up dialog box goto to 'unit cell'
+
 8. In the 'unit cell' option leave the symmetry part just type the lattice parameter whatever you have typed during running the program.
+
 9. Now go to the 'Structure Parameter' option and import the 'b.xyz' file. (look at the bottom of the dialog box there is an option for import)
+
 10. It will tell you that the given lattice parameter is not the same as before want to change the lattice parameter or not.. something like that. Just press NO there.
+
 11. Apply it and press OK.
+
 12 Now, you have your shifted crystal without losing the atoms at the boundary.
